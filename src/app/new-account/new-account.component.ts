@@ -12,7 +12,9 @@ export class NewAccountComponent implements OnInit {
 
   constructor(private loggerService: LoggingService,
               private accountsService: AccountsService) {
-
+    this.accountsService.statusUpdated.subscribe(
+      (status: string) => alert('New Status' + status)
+    );
   }
 
   ngOnInit() {
