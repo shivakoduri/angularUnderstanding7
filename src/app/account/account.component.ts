@@ -5,8 +5,8 @@ import {AccountsService} from "../accounts.service";
 @Component({
   selector: 'app-account',
   templateUrl: './account.component.html',
-  styleUrls: ['./account.component.css'],
-  providers: [LoggingService]
+  styleUrls: ['./account.component.css']
+  // providers: [LoggingService]
 })
 export class AccountComponent implements OnInit {
 
@@ -24,7 +24,7 @@ export class AccountComponent implements OnInit {
 
   onSetTo(status:string){
     this.accountsService.updateStatus(this.id, status);
-    this.loggerService.logToConsole(status);
+    // this.loggerService.logToConsole(status);
   }
 
 }
