@@ -4,10 +4,14 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import {HttpModule} from '@angular/http';
 import {FormsModule} from '@angular/forms';
+import { NewAccountComponent } from './new-account/new-account.component';
+import { AccountComponent } from './account/account.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NewAccountComponent,
+    AccountComponent
   ],
   imports: [
     BrowserModule,
